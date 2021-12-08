@@ -1,0 +1,64 @@
+.settlement-offer-header{
+    padding: 8px 10px;
+    font-size: 12px;
+    color:#fff;
+    background: #1e1e1e;
+}
+.settlement-offer-content{
+    background: #232323;
+    padding: 8px 10px;
+    font-size: 12px;
+    min-height: 380px!important;
+}
+.settlement-offer-footer{
+    background: #232323;
+    padding: 16px;
+}
+.info-icon{
+    width: 16px;
+    vertical-align: middle;
+    margin-left: auto;
+    float: right;
+}
+.settlement-title{
+    padding: 0 15px;
+    color:#fff;
+    font-size: 12px;
+}
+.view{
+    float: right;
+    color:#df8f01;
+}
+.settlement-bock{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.block-box{
+    box-shadow: 0px 1px 6px #000000;
+    border-radius: 6px;
+    width: calc(33% - 10px);
+    text-align: center;
+    margin: 10px 10px;
+}
+.block-box-content{
+    text-align: center;
+}
+.block-box-content-img{
+padding-top: 15px;
+}
+
+.block-box-content-text{
+    font-size: 18px;
+    color: #de2afb;
+    text-align: center;
+    padding:15px 0px;
+}
+
+.block-box-footer{
+    background: transparent linear-gradient(180deg, #DF8F01 0%, #A95C06 100%) 0% 0% no-repeat padding-box;
+    font-size: 10px;
+     border-radius: 0px 0px 5px 5px;
+    padding: 8px 0px;
+    color:#fff;
+}

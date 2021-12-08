@@ -1,0 +1,50 @@
+<div class="resolution-block">
+    <div class="resolution-block-header">
+        Resolution Rate by TOS Buckets
+        <span>
+            <img src="assets/images/info-d.png" alt="icon" class="info-icon">
+        </span>
+    </div>
+    <div class="resolution-block-content" id = "div1">
+        <div class="inner-box"  *ngFor="let resData of ResolutionData" >
+           
+            <div class="border-sdw">
+               
+                <div class="inner-box-bg1"  [ngStyle]="{ 'height.%':resData.value }">
+                      <div class="inner-box-bg1-line"  [ngStyle]="{ 'height.%':100 }"></div>
+                </div>
+                <div class="inner-box-text">
+                    {{resData.value}} %
+                </div>
+                
+            </div>
+            <div class="inner-box-txt">
+                {{resData.state}}
+            </div>
+        </div>
+    </div>
+    <!-- <div class="resolution-block-content" id = "div2">
+        <div class="inner-box"  *ngFor="let resNewData of ResolutionNewData" >
+           
+            <div class="border-sdw">
+               
+                <div class="inner-box-bg1"  [ngStyle]="{ 'height.%':resNewData.value }">
+                      <div class="inner-box-bg1-line"  [ngStyle]="{ 'height.%':100 }"></div>
+                </div>
+                <div class="inner-box-text">
+                    {{resNewData.value}} %
+                </div>
+                
+            </div>
+            <div class="inner-box-txt">
+                {{resNewData.state}}
+            </div>
+        </div>
+    </div> -->
+    <div class="resolution-block-footer">
+        Download Reports
+        <span>
+            <img src="assets/images/downloadShape.png" alt="icon" class="footer-icon">
+        </span>
+    </div>
+</div>

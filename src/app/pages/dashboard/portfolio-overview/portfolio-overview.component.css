@@ -1,0 +1,255 @@
+.h-5{
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+ .block{
+    display: flex;
+    align-items: center;
+    padding-block: 16px;
+    justify-content: space-between;
+}
+.block1{
+    display: flex;
+    align-items: center;
+    
+}
+.block2{
+    display: flex;
+    align-items: center;
+}
+.hr-line{
+    width: 30px;
+    height: 1px;
+    background: #fff;
+}
+.vr-line{
+    width: 2px;
+    height: 40px;
+    background: #df8f01;
+    margin: 0 10px;
+}
+.block-text{
+    color:#df8f01;
+    font-size: 16px;
+}
+
+
+
+.faSize1{
+  font-size: 2.5rem;
+  font-weight: 600;
+} 
+.faSize2{
+  font-size: 2.5rem;
+} 
+
+.account{
+  /* width: 30px; */
+   text-align: center;
+   border-radius: 50%;
+   font-size: 26px;
+   color: #fff;
+   line-height: 1.5;
+   background: #292929;
+   cursor: pointer;
+ }  
+.tog1{
+  background: linear-gradient(rgb(223, 143, 1) 0%, rgb(169, 92, 6) 100%) 0% 0% ;
+  box-shadow: rgb(0 0 0) 0px 3px 6px;
+  color: rgb(41, 41, 41);
+  border: 1px solid;
+    border-radius: 50%;
+    width: 40px;
+}
+.rupees{
+  width: 30px;
+   text-align: center;
+   border-radius: 50%;
+   font-size: 19px;
+   color: #fff;
+   border: 1px solid #fff;
+   background: #292929;
+   cursor: pointer;
+   line-height: 1.5;
+ }  
+.tog2{
+  background: linear-gradient(rgb(223, 143, 1) 0%, rgb(169, 92, 6) 100%) 0% 0% ;
+  box-shadow: rgb(0 0 0) 0px 3px 6px;
+  color: rgb(41, 41, 41);
+  border: 1px solid;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 1.5;
+    width: 40px;
+}
+
+
+.inrSize{
+  font-size: 18px;
+}
+/* 
+.rupees:hover {
+  cursor: pointer;
+  color:#292929 ;
+  background: #df8f01;
+}*/
+
+/* .active-btn{
+  font-size:40px;
+}
+.rup-change{
+  font-size: 28px;
+  width: 40px;
+  color:#292929 ;
+  background: #df8f01;
+}
+.acc-bg-rm{
+  color:#fff ;
+}
+
+
+
+
+
+#div2{
+  display: none;
+} */
+.btnBorder{
+    border: 1px solid #df8f01;
+    box-shadow: 0px 3px 6px #000000;
+    border-radius: 20px;
+    color: #df8f01;
+    padding-block: 5px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    width: 150px;
+
+}
+.dropdown-text{
+    font-size: 16px;
+}
+.rounded-icon{
+  border: 0.5px solid;
+  font-size: 19px;
+  width: 20px;
+  align-items: center;
+  border-radius: 50% !important;
+  margin-left: auto !important;
+}
+
+.roundedIconColor:hover{
+  background: #df8f01!important;
+    color: #000!important;
+}
+
+
+
+
+
+.dropdown {
+    margin-left: auto;
+  }
+  
+  .dropdownContent {
+    /* display: none; */
+    border-radius: 8px;
+    position: absolute;
+    background: #000;
+    color:#fff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -15px;
+    margin-top: 28px;
+    padding: 0px;
+
+  }
+  .dropdown-item{
+    border-bottom: 1px solid #1e1e1e !important;
+  }  
+
+  .dropdown-item-bg{
+    color: #df821b!important;
+  }   
+  .dropdownContent li {
+    color: #fff;
+    padding: 2px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdownContent li:hover {color: #df821b;background: #292929;}
+  
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+   /* .dropdownContent {
+    display: block;
+  } */
+  
+
+
+  /*5 Column Content Css Start*/
+  .b-bdr{
+    border: 1px solid #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px #0000008f;
+    background: #1e1e1e;
+  }
+  .dashboard-block{
+    justify-content: space-between;
+    width: calc(20% - 10px);
+  }
+  .dashboard-box{
+      display: flex;
+      position: relative;
+  }
+  .dashboard-icon{
+    width: 44px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-left:10px;
+    margin-top: -6px;
+  }
+  .img-width{
+      width:65px;
+      position: relative;
+  }
+  .dashboard-text{
+    padding: 10px;
+    font-size: 12px;
+    flex: 1 1 0;
+  }
+  .dashboard-text-1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .dashboard-text-1-icon{
+    width: 16px;
+    vertical-align: middle;
+  }
+  .dashboard-text-2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #fff;
+  }
+  .dashboard-text-2-rate{
+    text-align: left;
+    font-size: 20px;
+    color: #3cb4de;
+  }
+  .dashboard-text-2-percent{
+    font-size: 10px;
+    color: #fe877a;
+   margin-top: 10px;
+  }
+/*<!--5 Column Content End*/

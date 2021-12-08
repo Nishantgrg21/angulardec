@@ -1,0 +1,28 @@
+
+.sidenav{
+    float:left;
+    width: 75px;
+    min-height: 100vh;
+    background: #160c01;
+    position: fixed;
+}
+.container{
+    float: right;
+    width: calc(100% - 75px);
+    min-height: 100vh;
+    background: #292929;
+ }
+ .header{
+    min-height: 70px;
+    background: #292929;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+
+.content{
+    min-height:calc(100vh - 70px);
+    background: #292929;
+}

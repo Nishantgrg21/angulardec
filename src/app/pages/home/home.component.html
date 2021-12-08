@@ -1,0 +1,40 @@
+<div class="main-block" >
+    <div class="parent-block">
+        
+        <table class="table-border">
+            <thead>
+                <th>id</th>
+                <th>email</th>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>avatar</th>
+            </thead>
+            <tbody *ngFor="let userprofile of users">
+                <td>
+                    {{userprofile.id}}
+                </td>
+                <td>
+                    {{userprofile.email}}
+                </td>
+                <td>
+                    {{userprofile.first_name}}
+                </td>
+                <td>
+                    {{userprofile.last_name}}
+                </td>
+                <td style="cursor: pointer;">
+                    <img src={{userprofile.avatar}} (click)="onChangeValue(userprofile)" />
+                </td>
+            </tbody>
+        </table>
+    </div>
+    <div class="child-block">
+        <app-child [parentData]="PatentValuesFetch"></app-child>
+    </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+ <div class="h-5">
+    Portfolio Overview
+</div>
+<div class="block">
+    <div class="block1">
+        <div class="account"  (click)= toggleDisplay1() (click)="accountToAmount = 'By Account'"  [ngClass]="allClassChanges1" [class.tog1]="isShow1">
+            <i class="fa fa-user-circle" [ngClass]="allSizeChanges"></i>
+        </div>
+        <div class="hr-line"> </div>
+        <div class="rupees" (click)= toggleDisplay2() (click)="accountToAmount = 'By Amount'" [ngClass]="allClassChanges2" [class.tog2]="isShow2">
+            <!-- <i class="fas fa-rupee-sign" ></i> -->
+            <span class="inr-icon" [ngClass]="inrChanges"> ₹</span>
+        </div>
+        <div class="vr-line"> </div>
+        <div class="block-text" > {{accountToAmount}}</div>
+    </div>
+
+
+    <div class="block2">
+        
+        <div class="btnBorder" (mouseenter)="dropdownContent1=false" (mouseleave)="dropdownContent1=true">
+            {{SelectedValue1}}
+            <span class="material-icons rounded-icon"> expand_more </span>
+            <ul class="dropdownContent" *ngIf="!dropdownContent1" (click)="dropdownContent1 = true"  >
+                <li class="dropdown-item" *ngFor="let item1 of dropdownList1"  (click)="onChange1(item1)"  [value]="item1" [class.dropdown-item-bg]="item1==SelectedValue1">
+                    {{item1}}
+                </li>
+            </ul>
+        </div>
+
+
+<div class="btnBorder" (mouseenter)="dropdownContent=false" (mouseleave)="dropdownContent=true">
+    {{SelectedValue}}
+    <span class="material-icons rounded-icon"> expand_more </span>
+    <ul class="dropdownContent" *ngIf="!dropdownContent" (click)="dropdownContent = true"  >
+        <li class="dropdown-item" *ngFor="let item of dropdownList2"  (click)="onChange(item)"  [value]="item" [class.dropdown-item-bg]="item==SelectedValue">
+            {{item}}
+        </li>
+    </ul>
+</div>
+
+
+        
+           
+    </div>
+
+</div>
+
+
+<!--5 Column Content Start-->
+<div class="block Bucket1 details" *ngIf="accountToAmount === 'By Account'">
+    <div class="dashboard-block b-bdr"  *ngFor=" let Pdata of PortfolioData1" value="Pdata">
+        <div class="dashboard-box" >
+            <div class="dashboard-icon">
+                <img src={{Pdata.image}} class="img-width">
+            </div>
+            <div class="dashboard-text">
+                <div class="dashboard-text-1">
+                    <span >{{Pdata.title}}</span>
+                    <span>
+                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
+                    </span>
+                </div>
+                <div class="dashboard-text-2" >
+                    <span class="dashboard-text-2-rate">{{Pdata.amount}}</span>
+                    <span  class="dashboard-text-2-percent">{{Pdata.percent}}</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+</div>
+<!--5 Column Content End-->
+<!--5 Column Content Start-->
+<div class="block Bucket2 details"  *ngIf="accountToAmount === 'By Amount'" >
+    <div class="dashboard-block b-bdr" *ngFor=" let PNewdata of PortfolioData2">
+        <div class="dashboard-box">
+            <div class="dashboard-icon">
+                <img  src={{PNewdata.image}} class="img-width">
+            </div>
+            <div class="dashboard-text">
+                <div class="dashboard-text-1">
+                    <span>{{PNewdata.title}}</span>
+                    <span>
+                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
+                    </span>
+                </div>
+                <div class="dashboard-text-2">
+                    <span class="dashboard-text-2-rate">{{PNewdata.amount}} </span>
+                    <span  class="dashboard-text-2-percent">{{PNewdata.percent}} </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+</div>
