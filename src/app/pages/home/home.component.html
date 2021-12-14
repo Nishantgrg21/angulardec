@@ -1,6 +1,14 @@
 <div class="main-block" >
     <div class="parent-block">
-        
+   <p>
+        {{DataFectfromChild.first_name}}
+        <br>
+    {{DataFectfromChild.last_name}}<br>
+    {{DataFectfromChild.email}}<br>
+   
+    <img src={{DataFectfromChild.avatar}} width="128" height="128">
+ </p>
+    
         <table class="table-border">
             <thead>
                 <th>id</th>
@@ -29,7 +37,7 @@
         </table>
     </div>
     <div class="child-block">
-        <app-child [parentData]="PatentValuesFetch"></app-child>
+        <app-child [parentData]="PatentValuesFetch"  (parentFunction)="getFromChild($event)"></app-child>
     </div>
 </div>
 

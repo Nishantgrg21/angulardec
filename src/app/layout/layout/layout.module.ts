@@ -17,6 +17,7 @@ import { PortfolioOverviewComponent } from 'src/app/pages/dashboard/portfolio-ov
 import { ChildComponent } from 'src/app/pages/home/child/child.component';
 import { ParentComponent } from 'src/app/pages/home/parent/parent.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -40,7 +41,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     RouterModule,
     CommonModule,SharedModule,
-   
+    FormsModule
   ],
   exports:[
     LayoutComponent

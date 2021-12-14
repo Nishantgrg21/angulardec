@@ -1,5 +1,21 @@
 <div class="container">
+  
+  <br>
+  <div>
+    <p>Add User From Child to Parent Component</p>
+    <form #myForm ="ngForm" (ngSubmit)="addUser(myForm.value)">
+      <input type="email" name="email" id="email" placeholder="Email" ngModel>
+      <input type="text" name="first_name" id="first_name" placeholder="First Name" ngModel>
+      <input type="text" name="last_name" id="last_name" placeholder="Last Name" ngModel>
+      <input type="text" name="avatar" id="avatar" placeholder="Place Image URL" ngModel>
+      <!-- <input type="file" name="avatar" id="avatar" ngModel> -->
+      <button >Add New User</button>
+    </form>
+  </div>
 
+  <br>
+  <hr>
+  <br>
 
     <p>Click on Image values Fetch From Parent to Child Component</p>
     <br>
